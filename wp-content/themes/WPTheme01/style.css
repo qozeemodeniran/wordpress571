@@ -1,0 +1,40 @@
+/*
+Theme Name: SharpEdge
+Theme URI: http://localhost:85/wordpress/themes/sharpEdge
+Version: 0.1
+Author: Vincy
+Author URI: https://phppot.com/
+Description: A Minimal WordPress Theme.
+Tags: minimal, simple, responsive, light-weight
+Text Domain: sharpEdge
+*/
+a {
+    color: #A0A0A0;
+    text-decoration: none;
+    }
+    #inner {
+    width: 778px;
+    text-align: left;
+    }
+    #contentArea {
+    border-top: #CCCCCC 2px solid;
+    overflow:hidden
+    }
+    #mainContent {	
+    float:left;
+    width: 70%;
+    }
+    #sidebar {
+    float: right;
+    width: 28%;
+    padding-left: 3px;
+    padding-bottom:100%; 
+    margin-bottom:-100%;
+    background-color: #DDDDDD;	
+    }
+    #footer {
+    clear:both;
+    padding: 2px;
+    color: #DDDDDD;
+    background-color: #000000;	
+    }

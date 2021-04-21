@@ -1,0 +1,15 @@
+/*
+Theme Name: WPTheme02
+Theme URI: http://localhost:85/wordpress/themes/WPTheme02
+Version: 1.0
+Author: Qozeem
+Author URI: https://phppot.com/
+Description: A Minimal WordPress Theme.
+Tags: minimal, simple, responsive, light-weight
+Text Domain: WPTheme02
+*/
+
+body{
+    background-color: gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
