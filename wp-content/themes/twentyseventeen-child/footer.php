@@ -41,6 +41,10 @@
 
 				get_template_part( 'template-parts/footer/site', 'info' );
 				?>
+				<div class="custom-footer">
+					<?php esc_html_e('Custom footer text', 'twentyseventeenchild'); ?>
+				</div>
+
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
