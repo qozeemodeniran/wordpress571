@@ -1,3 +1,3 @@
-<?php get_header('splash'); ?>
+<?php get_header(); ?>
     <h1>index.php</h1>
-<?php get_footer('splash'); ?>
+<?php get_footer(); ?>
