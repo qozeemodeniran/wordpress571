@@ -25,6 +25,10 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'demo-starter-theme' ), 'demo-starter-theme', '<a href="http://wordpress571.localhost">Qozeem Odeniran</a>' );
 				?>
 		</div><!-- .site-info -->
+
+		<div class="coutom-footer">
+			<?php esc_html_e("Custom footer text", "demo-starter-theme") ?>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
