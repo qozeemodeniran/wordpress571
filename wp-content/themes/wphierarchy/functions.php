@@ -1,5 +1,4 @@
-<?php 
-// Add Theme Support
+<?php // Add Theme Support
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'post_format', ['aside'], ['gallery'], ['link'], ['image'], ['quote'], ['status'], ['video'], ['audio'], ['chat'] );
@@ -20,4 +19,19 @@ add_action('wp_enqueue_scripts', 'wphierarchy_enqueue_styles');
 // Register Menu Location
 register_nav_menus([
     'main-menu' => esc_html__( 'Main-Menu', 'wphoerarchy' ),
-]) ?>
+]);
+
+// Setup Widget Area
+function wphierarchy_widgets_init(){
+    register_sidebar( [
+        'name' => esc_html__( 'Main Sidebar', 'wphierarchy' ),
+        'id' => 'main-sidebar',
+        'description' => esc_html__("Add widgets for main sidebar here", 'wphierarchy'),
+        'before-widget' => '<section class="widget">',
+        'after-widget' => '</section>',
+        'before-title' => '<h2 class="widget-title>',
+        'after-title' => '</h2>',
+    ] );
+}
+add_action( 'widgets_init', 'wphierarchy_widgets_init' );
+?>
