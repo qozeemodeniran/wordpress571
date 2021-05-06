@@ -1,5 +1,6 @@
 <?php get_header(); ?>
     <div id="primary" class="content-area">
+        <?php get_sidebar('splash'); ?>
         <main id="main" class="site-main" role="main">
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="entry-header">
