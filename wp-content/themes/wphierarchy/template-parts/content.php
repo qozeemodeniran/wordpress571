@@ -7,7 +7,7 @@
             <?php esc_html_e("Author: "); ?> <?php the_author(); ?>
         </div>
     </header>
-        <div class="enyrt-content">
+        <div class="entry-content">
             <?php the_content(); ?>
         </div>
         <?php if(comments_open()): ?>
