@@ -8,7 +8,7 @@
                         <?php the_title('<h1>', '</h1>'); ?> 
                     </header>
                     <div class="entry-content">
-                        <p><a href="<?php echo $post->guid; ?>">Download</a></p>
+                        <video src="<?php echo esc_url($post->guid); ?>" controls></video>
                         <?php the_content(); ?>
                     </div>
                     <?php if(comments_open()): ?>
@@ -18,7 +18,7 @@
             <?php endwhile; else: ?>
             <?php get_template_part('template-parts/content', 'none'); ?>
             <?php endif; ?>
-            <p>Template: attachment.php</p>
+            <p>Template: video.php</p>
         </main>
     </div>
     <?php get_sidebar(); ?>
