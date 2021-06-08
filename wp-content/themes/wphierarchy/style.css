@@ -194,6 +194,15 @@ body {
 	max-width: 720px;
   }
   
+  .single-portfolio #content,
+  .page-template-template-splash #content,
+  .page-id-1582 #content,
+  .category-excerpt #content,
+  .tag-wordpress #content{
+	width: 50%;
+	max-width: 720px;
+  }
+  
   #content article,
   #content article div,
   #content img {
