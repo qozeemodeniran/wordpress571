@@ -9,5 +9,5 @@
             <p>Template: front-page.php</p>
         </main>
     </div>  
-    <?php get_sidebar('front-page'); ?> 
+    <?php get_sidebar(); ?> 
 <?php get_footer(); ?>
