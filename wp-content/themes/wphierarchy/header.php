@@ -25,7 +25,7 @@
         </div>
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <?php $args = [
-                'theme-location' => 'main-menu'
+                'theme_location' => 'main-menu'
             ];
             wp_nav_menu( $args ); ?>
         </nav>

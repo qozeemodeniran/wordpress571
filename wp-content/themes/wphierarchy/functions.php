@@ -17,6 +17,12 @@ function wphierarchy_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'wphierarchy_enqueue_styles'); 
 
+// Load in our JS
+function wphierarchy_enqueue_scripts() {
+    wp_enqueue_script( 'theme-js', get_stylesheet_directory_uri() . '/assets/js/theme.js', [], time(), true );
+}
+add_action('wp_enqueue_scripts', 'wphierarchy_enqueue_scripts'); 
+
 // Register Menu Location
 register_nav_menus([
     'main-menu' => esc_html__( 'Main-Menu', 'wphoerarchy' ),
@@ -54,3 +60,4 @@ function wphierarchy_widgets_init(){
 }
 add_action( 'widgets_init', 'wphierarchy_widgets_init' );
 ?>
+
