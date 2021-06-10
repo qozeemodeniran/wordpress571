@@ -12,5 +12,6 @@
         wp_login_form($args);  
     ?>
     <?php endif; ?>
+    <?php get_calendar(); ?>
     <?php dynamic_sidebar('main-sidebar'); ?>
 </aside>
